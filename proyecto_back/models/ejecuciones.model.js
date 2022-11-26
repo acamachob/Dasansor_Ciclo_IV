@@ -7,9 +7,9 @@ const EjecucionesSchema = new Schema({
     fecha_asignacion:{type: String, required: true, max:100},
     actividad:{type: String, required: true, max:100},
     nombre_sitio:{type: String, required: true, max:100},
-    fecha_instalacion:{type: Date, required: true, max:100},
-    fecha_integracion:{type: Date, required: true, max:100},
-    fecha_documentacion:{type: Date, required: true, max:100}
+    fecha_instalacion:{type: String, required: true, max:100},
+    fecha_integracion:{type: String, required: true, max:100},
+    fecha_documentacion:{type: String, required: true, max:100}
 });
 
 module.exports = mongoose.model("ejecuciones", EjecucionesSchema); 
